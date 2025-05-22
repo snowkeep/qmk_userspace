@@ -1,0 +1,2 @@
+USER_NAME := snowkeep-hd
+HLC_CIRQUE_TRACKPAD=1
