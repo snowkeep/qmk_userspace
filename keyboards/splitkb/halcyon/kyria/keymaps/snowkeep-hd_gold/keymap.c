@@ -17,7 +17,7 @@
 #include QMK_KEYBOARD_H
 #include "snowkeep-hd.h"
 
-// note the extra row for 
+// note the extra row for
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_HD] = LAYOUT_split_3x6_5_hlc(
@@ -28,10 +28,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_MUTE, KC_NO,  KC_NO, KC_NO, KC_NO,                                                                KC_MUTE, KC_NO, KC_NO, KC_NO, KC_NO
     ),
 
+    // RM = RGB MATRIX
     [_SYM] = LAYOUT_split_3x6_5_hlc(
-     RGB_TOG, KC_GRV,  KC_LT,   KC_GT,   KC_DQT,  KC_DOT,                                        KC_AMPR, KC_UNDS, KC_LBRC, KC_RBRC, KC_PERC, _______,
-     RGB_MOD, KC_EXLM, KC_MINS, KC_PLUS, KC_EQL,  KC_HASH,                                       KC_PIPE, KC_COLN, KC_LPRN, KC_RPRN, KC_QUES, XXXXXXX,
-     _______, KC_CIRC, KC_SLSH, KC_ASTR, KC_BSLS, M_UPDIR, _______, XXXXXXX,   XXXXXXX, _______, KC_TILD, KC_DLR,  KC_LCBR, KC_RCBR, KC_AT,   _______,
+     RM_TOGG, KC_GRV,  KC_LT,   KC_GT,   KC_DQT,  KC_DOT,                                        KC_AMPR, KC_UNDS, KC_LBRC, KC_RBRC, KC_PERC, _______,
+     RM_NEXT, KC_EXLM, KC_MINS, KC_PLUS, KC_EQL,  KC_HASH,                                       KC_PIPE, KC_COLN, KC_LPRN, KC_RPRN, KC_QUES, XXXXXXX,
+     BL_STEP, KC_CIRC, KC_SLSH, KC_ASTR, KC_BSLS, M_UPDIR, _______, XXXXXXX,   XXXXXXX, _______, KC_TILD, KC_DLR,  KC_LCBR, KC_RCBR, KC_AT,   _______,
                                 _______, _______, _______, _______, _______,   _______, XXXXXXX, _______, _______, _______,
      KC_MUTE, KC_NO,  KC_NO, KC_NO, KC_NO,                                                                KC_MUTE, KC_NO, KC_NO, KC_NO, KC_NO
     ),
@@ -45,9 +46,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_FUNC] = LAYOUT_split_3x6_5_hlc(
-     QK_BOOT, XXXXXXX, KC_MPRV, KC_VOLU, KC_MNXT, XXXXXXX,                                       XXXXXXX, KC_F7,   KC_F8,   KC_F9,   KC_F10,  QK_BOOT,
+     XXXXXXX, XXXXXXX, KC_MPRV, KC_VOLU, KC_MNXT, XXXXXXX,                                       XXXXXXX, KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PAUS,
      KC_DEL,  XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN,                                       XXXXXXX, KC_F4,   KC_F5,   KC_F6,   KC_F11,  _______,
-     BL_STEP, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, KC_F1,   KC_F2,   KC_F3,   KC_F12,  _______,
+     QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, KC_F1,   KC_F2,   KC_F3,   KC_F12,  _______,
                                 _______, _______, _______, _______, _______,   _______, XXXXXXX, _______, _______, _______,
      KC_MUTE, KC_NO,  KC_NO, KC_NO, KC_NO,                                                                KC_MUTE, KC_NO, KC_NO, KC_NO, KC_NO
     )
